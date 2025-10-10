@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Exercise 04 - Form</title>
-  </head>
-  <body>
-    <main>
-      <form action="/submit">
-        <!-- Add your code here -->
-      </form>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercise 04 - Form</title>
+</head>
+
+<body>
+  <main>
+    <form action="/submit">
+      <!-- Add your code here -->
+      <h1>Form</h1>
+      <br>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="Full Name"><br>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="name@pdx.edu"><br>
+      </div>
+      <br>
+      <fieldset>
+        <legend>Favorite Character:</legend>
+        <input type="radio" id="spongebob" name="character" value="spongebob">
+        <label for="spongebob">Spongebob</label><br>
+        <input type="radio" id="sandy" name="character" value="sandy">
+        <label for="sandy">Sandy</label><br>
+        <input type="radio" id="patrick" name="character" value="patrick">
+        <label for="patrick">Patrick</label>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Are you a fan of the show?</legend>
+        <input type="checkbox" id="watched" name="fan" value="watched">
+        <label for="watched">Yes, I have watched all episodes!</label><br>
+        <input type="checkbox" id="memes" name="fan" value="memes">
+        <label for="memes">Yes, it's got the best memes.</label>
+      </fieldset>
+      <br>
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+      <br><br>
+    </form>
+  </main>
+</body>
+
 </html>
