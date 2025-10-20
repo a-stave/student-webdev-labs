@@ -1,25 +1,70 @@
-/* Specificity Exercise */
+/* Specificity Exercise
+ *     x = id
+ *     y = class, attribute, pseudo-class
+ *     z = element, pseudo-element
+ */
 
+/* nav = 0,0,1
+  * .list-item = 0,1,0
+  * a = 0,0,1
+  *
+  * Total = (0,1,2)
+  */
 nav .list-item > a {
   color: var(--purple);
 }
 
+/* #main = 1,0,0
+ * ::first-letter = 0,0,1
+ *
+ * Total = (1,0,1)
+ */
 #main::first-letter {
   color: var(--purple);
 }
 
+/* input[type] = 0,1,1
+ *
+ * Total = (0,1,1)
+ */
 input[type] {
   color: var(--purple);
 }
 
+/* section = 0,0,1
+ * .main = 0,1,0
+ * ::first-line = 0,0,1
+ *
+ * Total = (0,1,2)
+ */
 section .main::first-line {
   color: var(--purple);
 }
 
-nav ul.menu li#first a:not([class='visited']) {
+/* nav = 0,0,1
+ * ul.menu = 0,1,1
+ * li#first = 1,0,1
+ * a:not([class="visited"]) = 0,1,1
+ *
+ * Total = (1,2,4)
+ */
+nav ul.menu li#first a:not([class="visited"]) {
   color: var(--purple);
 }
 
+/* div = 0,0,1
+ * ol = 0,0,1
+ * li = 0,0,1
+ * ul = 0,0,1
+ * li = 0,0,1
+ * ol = 0,0,1
+ * li = 0,0,1
+ * ul = 0,0,1
+ * li = 0,0,1
+ * a = 0,0,1
+ *
+ * Total = (0,0,10)
+ */
 div ol li ul li ol li ul li a {
   color: var(--purple);
 }
