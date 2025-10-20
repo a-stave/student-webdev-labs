@@ -10,12 +10,31 @@
 
 /* Use attribute selectors for the first part of the exercise */
 
-li[class] {
-  color: var(--red);
+.dog,
+.hedgehog {
+  color: var(--magenta);
+}
+
+#cat {
+  color: var(--teal);
+}
+
+/*li[class="cat dog parrot"],*/
+li[class="cat dog parrot"],   /* Why!?! */
+.donkey {
+  color: var(--royalblue);
 }
 
 /* Use descendant, child, and sibling selectors for the second part */
 
 section li {
   color: var(--green);
+}
+
+.first ~ li {
+  color: var(--violet);
+}
+
+.second + li {
+  color: var(--royalblue);
 }
