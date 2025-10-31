@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercise 04 - Modals</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../_styles/styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body>
-    <h1>04 - Bootstrap Modal</h1>
-    <!-- Add your code here -->
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 04 - Modals</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../_styles/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <h1>04 - Bootstrap Modal</h1>
+  <!-- Add your code here -->
+  <p class="d-flex justify-content-center mt-5">Click on the button below for more information inside a
+    modal</p>
+  <button type="button" class="btn btn-primary position-relative top-50 start-50 translate-middle mt-3"
+    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    More details
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="staticBackdropLabel">More Details</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident impedit repellendus,
+          consequuntur reprehenderit delectus quam dolorem voluptatibus velit nemo laudantium veritatis reiciendis
+          quisquam illum officia saepe quo aut ea voluptatem!
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
 </html>
